@@ -19,11 +19,14 @@
 :: OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 :: SOFTWARE.
 ::
+:: Flash image by openocd.
+:: example: ./flash.sh interface/cmsis-dap.cfg target/stm32f1x.cfg $PROJECT_DIR/build/example.bin 0x08000000
+::
 
 @echo off
 
-:: %1: interface
-:: %2: target
+:: %1: interface config
+:: %2: target config
 :: %3: image path
 :: %4: base addr
 
